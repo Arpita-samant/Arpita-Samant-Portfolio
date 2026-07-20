@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1b83818bd3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -20,6 +21,8 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+
+    <!------------------ Home Section ------------------>
 
     <section class="home" id="home">
         <div class="home-content">
@@ -44,6 +47,88 @@
         <div class="home-img">
             <img src="img/home.png" alt="">
             </div>
+    </section>
+
+    <!------------------ About Section ------------------>
+
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/about.jpg" alt="">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I’m currently pursuing a Bachelor's in Computer Applications (BCA) with a specialization in 
+                        Artificial Intelligence and Data Science. I’m passionate about applying AI and data analytics to solve 
+                        real-world problems and constantly working on enhancing my technical skills in this dynamic field.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                        
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Designer</span><br>Designing the Interface</li>
+                            <li><span>Frontend Developer</span><br>Build a frontend web design</li>
+                            <li><span>Web Developer</span><br>Build a web design</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2025-2026</span><br>Full Time at Amingo Foundation</li>
+                            <li><span>2 Months</span><br>Internship at Unified Mentor</li>
+                            <li><span>Present</span><br>Build a web design</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BCA AIDS</span><br>Graphic Era Hill University</li>
+                            <li><span>Intermediate (PCM)</span><br>Mnemonic Convent School</li>
+                           
+                        </ul>
+                    </div>
+
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------- services ---------------------->
+
+    <section id="services">
+        <div class="container">
+            <div class="sub-title">
+                <h1>My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Frontend Developer</h2>
+                        <p>I create responsive, user-friendly, and visually appealing websites using HTML, CSS, JavaScript, and modern frontend technologies. I focus on building clean interfaces that provide a smooth and engaging user experience.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                     <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>Graphic Designer</h2>
+                        <p>I design creative logos, social media posts, banners, posters, and branding materials that combine creativity with clear visual communication to make every design impactful.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+
+                     <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>Web Developer</h2>
+                        <p>I develop modern, responsive, and high-performance websites with clean code and optimized functionality. My goal is to build secure, scalable, and user-friendly web solutions for different needs.</p>
+                        <a href="#">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
 
