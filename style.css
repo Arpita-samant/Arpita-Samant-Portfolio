@@ -501,8 +501,15 @@ span{
     border: 1px solid #e69fa7;
     padding: 14px 50px;
     border-radius: 6px;
-    
+    text-decoration: none;
+    transition: background 0.5s;  
 }
+
+.btn:hover{
+    background: #ae5560;
+}
+
+
 
 
 
