@@ -13,3 +13,11 @@ function opentab(tabname){
 
 }
 
+const menuIcon = document.querySelector("#menu-icon")
+const navbar = document.querySelector(".navbar")
+
+menuIcon.onclick = () => {
+    navbar.classList.toggle("active");
+    menuIcon.classList.toggle("bx-menu");
+    menuIcon.classList.toggle("bx-x");
+};

@@ -19,6 +19,7 @@
 html {
     font-size: 60%;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -426,7 +427,7 @@ span{
 }
 
 
-/* portfolio */
+/*--------------- portfolio------------  */
 
 .work-list{
     display: grid;
@@ -566,5 +567,90 @@ form .btn2{
 }
 
 
+/*----------------CSS for small Screen-------------- */
+
+#menu-icon{
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+    }
+
+@media only screen and (max-width: 600px){
+
+    #menu-icon{
+        display: block;
+        font-size: 3rem;
+    }
+    
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 220px;
+        background: #6c2727;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        transition: 0.4s ease;
+        border-radius: 0 0 0 10px;
+    }
+    .navbar.active{
+        right: 0;
+    }
+    .navbar a{
+        /* display: block; */
+        margin: 15px 0;
+        font-size: 18px;
+        color: var(--text-color);
+    }
+
+    .header{
+        padding: 15px 5%;
+
+    }
+
+    .log{
+        font-size: 2.4rem;
+    }
+
+    .home{
+        flex-direction:column-reverse;
+        gap:4rem;
+        text-align:center;
+    }
+
+    .home-content{
+        align-items:center;
+    }
+
+    .home-img img{
+        width:70vw;
+    }
 
 
+    .navbar .fa-bars, 
+    .navbar .fa-xmark{
+        display: none;
+    }
+
+    .row{
+        flex-direction:column;
+    }
+
+    .about-col-1,
+    .about-col-2,
+    .contact-left,
+    .contact-right{
+        flex-basis:100%;
+    }
+
+    .services-list,
+    .work-list{
+        grid-template-columns:1fr;
+    }
+
+
+
+}
