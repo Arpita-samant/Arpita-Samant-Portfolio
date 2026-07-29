@@ -651,6 +651,12 @@ form .btn2{
         grid-template-columns:1fr;
     }
 
+}
 
+#msg{
+    color: #61b752;
+    margin-top: -35px;
+    display: block;
+    font-size: 16px;
 
 }
